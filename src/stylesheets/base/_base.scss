@@ -1,0 +1,31 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: #FFF7C7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FFF7C7; /* Gecko Browsers */
+}
+
+body {
+  padding: 3rem 0 0 0;
+  color: #353535;
+  background-color: #54a6aa;
+  line-height: 1.5;
+  font-family: $font-sans-serif;
+  font-size: 20px;
+
+  @media (max-width: $max-width-sm) {
+    padding-top: 1rem;
+  }
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+
+  @media (max-width: $max-width-sm) {
+    padding: 0 20px;
+  }
+}
